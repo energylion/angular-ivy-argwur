@@ -1,0 +1,11 @@
+<ng-template #template1>
+  <ul *ngFor="let item of elementi">
+    <li>{{ item.descrizione }}</li>
+    <br /><br />
+    {{
+      item.prezzo
+    }}
+  </ul>
+</ng-template>
+
+<ng-content *ngIf="pippo; else template1"> </ng-content>
